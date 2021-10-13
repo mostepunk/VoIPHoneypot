@@ -1,0 +1,34 @@
+version: "2"
+
+networks:
+  d_link_dph150s_local:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.3.0/24
+
+services:
+  d_link_dph150s:
+    image: "registry.avsw.ru/d_link_dph150s"
+    restart: unless-stopped
+    networks:
+      - d_link_dph150s_local
+    privileged: true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_ADMIN
+    build: .
+    container_name: d_link_dph150s
+    volumes:
+      - /opt/avsoft/dockers/d_link_dph150s/log/:/temp/cowrie/data/log
+      - /opt/avsoft/dockers/d_link_dph150s/log/keys:/home/cowrie/cowrie/etc
+      - /opt/avsoft/dockers/d_link_dph150s/log/tty:/temp/cowrie/data/log/tty
+      - /opt/avsoft/dockers/d_link_dph150s/downloads:/temp/cowrie/data/downloads
+
+    ports:
+      - "23:23"
+      - "80:80"
+      - "5060:5060"
+      - "5060:5060/udp"

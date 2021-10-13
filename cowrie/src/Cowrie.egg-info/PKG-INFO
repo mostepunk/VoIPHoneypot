@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Cowrie
+Version: 2.0.2
+Summary: Cowrie SSH/Telnet Honeypot.
+Home-page: https://www.cowrie.org/
+Author: Michel Oosterhof
+Author-email: michel@oosterhof.net
+Maintainer: Michel Oosterhof
+Maintainer-email: michel@oosterhof.net
+License: BSD
+Description: Cowrie SSH/Telnet Honeypot.
+Keywords: ssh telnet honeypot
+Platform: Unix
+Platform: Mac OSX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Framework :: Twisted
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Provides-Extra: mysql
+Provides-Extra: csirtg
+Provides-Extra: elasticsearch
+Provides-Extra: slack
+Provides-Extra: influxdb
+Provides-Extra: rethinkdblog
+Provides-Extra: dshield
+Provides-Extra: s3
+Provides-Extra: mongodb

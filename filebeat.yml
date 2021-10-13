@@ -1,0 +1,22 @@
+- type: log
+  enabled: true
+  fields_under_root: true
+  json.keys_under_root: true
+  paths:
+    - /data/d_link_dph150s/log/dlink.json
+    - /data/d_link_dph150s/log/web.ndjson
+    - /data/d_link_dph150s/log/cowrie.json
+  fields:
+    type: d_link_dph150s
+  processors:
+    - decode_json_fields:
+        fields: ['message']
+        target: null
+    - add_fields:
+        when:
+           regexp:
+              eventid: "file_*"
+        target: ""
+        fields:
+           file_path: "/home/file.exe"
+           file_name: "file.exe"

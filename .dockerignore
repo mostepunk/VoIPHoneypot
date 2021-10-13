@@ -1,0 +1,8 @@
+*.log
+docker-compose.prod.yml
+docker-compose.yml
+node_modules
+doc/*
+plgr/*
+logs/*
+.git/*

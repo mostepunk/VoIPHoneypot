@@ -1,0 +1,47 @@
+# csirtg
+csirtgsdk>=0.0.0a17 # Specify version because pip won't install pre-release versions by default
+
+# dshield
+requests
+
+# elasticsearch
+elasticsearch
+
+# hpfeeds
+hpfeeds
+
+# hpfeeds3
+hpfeeds3
+
+# mysql
+# If this fails, see documentation /home/cowrie/cowrie/docs/sql/README.md
+# There are two options, mysqlclient is newer and provides Python3 support.
+mysqlclient
+# MySQL-python
+
+# mongodb
+pymongo
+
+# rethinkdblog
+rethinkdb
+
+# s3
+botocore
+
+# slack
+slackclient
+
+# influxdb
+influxdb
+
+# kafka
+afkak
+python-snappy
+
+# dblog_xmpp
+wokkel==18.0.0rc5
+
+# misp
+pymisp; python_version >= '3.0'
+pymisp==2.4.119.1; python_version < '3.0'
+pathlib; python_version < '3.0'

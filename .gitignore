@@ -1,0 +1,5 @@
+**/__pycache__
+*.vim
+plgr/*
+logs
+node_modules
