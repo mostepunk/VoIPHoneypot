@@ -1,8 +1,6 @@
 # VoIP Honeypot
 
-[Switch to English](README_eng.md)
-
-Ловушка, имитирующая поведение VoIP телефонии. Принимает запросы по протоколу udp/tcp и отвечает на запросы: 
+Honeypot that imitates VoIP phone. It receives udp/tcp requests and send answer on:
 - INVITE
 - INVITE Authorization
 - OPTIONS
@@ -13,22 +11,22 @@
 ![](doc/pic.jpg)
 
 
-## Ссылки
+## Links
 - [voip-hpc](https://github.com/tobiw/voip-hpc)
 - [honeysip [fork of voip-hpc]](https://github.com/mushorg/honeysip)
-- [Зубодробильный документ по стандартам SIP [RFC 3261]](https://tools.ietf.org/html/rfc3261)
-- [описание эмулируемого телефона D-Link DPH-150S](https://www.dlink.ru/ru/products/8/2189.html)
+- [SIP standarts [RFC 3261]](https://tools.ietf.org/html/rfc3261)
+- [D-Link DPH-150S phone description (russian)](https://www.dlink.ru/ru/products/8/2189.html)
 
-## Запуск
+## Starting
 - `docer-compose up`
 
-## Планы:
-- [x] реализовать tcp протокол
-- [x] В случае неправильной авторизации, возвращать ответы `400 Bad Request` или `481: b"Call/Transaction Does Not Exist",`
-- [x] Доделать обманку для nmap
+## ToDo:
+- [x] Tcp protocol
+- [x] In case incorrect authorization send `400 Bad Request` or `481: b"Call/Transaction Does Not Exist",`
+- [x] Finish Nmap fooler
 
-## Аппарат D-Link DPH-150S
-##### Сигнальные, медиа и сетевые протоколы
+## Device D-Link DPH-150S
+##### Signaling, media and network protocols
 - SIP RFC 3261
 - SDP RFC 2327
 - RTP RFC 1889
@@ -37,7 +35,7 @@
 - TFTP/FTP/HTTP для автоконфигурирования
 - IP/TCP/UDP/ARP/ICMP
 
-## Примеры входящих сообщений:
+## Examples of incoming messages:
 ```
 === OPTIONS ===
     OPTIONS sip:127.0.0.1 SIP/2.0
@@ -100,7 +98,7 @@
     m=audio 30123 RTP/AVP 0
 ```
 
-## Результат сканирования Nmap
+## Result of Nmap scanning
 - `sudo nmap -sV -T4 -O -A -f --version-light 192.168.*.*` - Настоящий телефон
     ```
         Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-26 12:54 MSK

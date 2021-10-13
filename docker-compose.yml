@@ -10,7 +10,6 @@ networks:
 
 services:
   d_link_dph150s:
-    image: "registry.avsw.ru/d_link_dph150s"
     restart: unless-stopped
     networks:
       - d_link_dph150s_local
@@ -22,10 +21,10 @@ services:
     build: .
     container_name: d_link_dph150s
     volumes:
-      - /opt/avsoft/dockers/d_link_dph150s/log/:/temp/cowrie/data/log
-      - /opt/avsoft/dockers/d_link_dph150s/log/keys:/home/cowrie/cowrie/etc
-      - /opt/avsoft/dockers/d_link_dph150s/log/tty:/temp/cowrie/data/log/tty
-      - /opt/avsoft/dockers/d_link_dph150s/downloads:/temp/cowrie/data/downloads
+      - /opt/dockers/d_link_dph150s/log/:/temp/cowrie/data/log
+      - /opt/dockers/d_link_dph150s/log/keys:/home/cowrie/cowrie/etc
+      - /opt/dockers/d_link_dph150s/log/tty:/temp/cowrie/data/log/tty
+      - /opt/dockers/d_link_dph150s/downloads:/temp/cowrie/data/downloads
 
     ports:
       - "23:23"
