@@ -26,7 +26,7 @@ services:
       - /opt/dockers/d_link_dph150s/log/tty:/temp/cowrie/data/log/tty
       - /opt/dockers/d_link_dph150s/downloads:/temp/cowrie/data/downloads
     environment:
-      - phonemodel='D-Link DPH-150S VoIP phone'
+      - phonemodel=D-Link DPH-150S VoIP phone
     ports:
       - "23:23"
       - "80:80"
