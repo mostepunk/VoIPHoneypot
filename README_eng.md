@@ -40,6 +40,9 @@ This Honeypot writes logs to files `.json` for Kibana and `.log` for admin to co
 - TFTP/FTP/HTTP для автоконфигурирования
 - IP/TCP/UDP/ARP/ICMP
 
+## Change Device
+If you want to change device model, you should find its `fingerprint` in [nmap os database](https://svn.nmap.org/nmap/nmap-os-db) and insert it to the [file](OSfooler/osfooler_ng/dep/nmap-os-db). After that you need to change variable `phonemodel` in `docker-compose`. And, perhaps, It will work correct, But I'm not sure, bacause possibly model of phone is written somewhere in code.
+
 ## Examples of incoming messages:
 ```
 === OPTIONS ===
