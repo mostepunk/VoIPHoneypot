@@ -1,0 +1,63 @@
+{
+"eventid": "connection", 
+"timestamp": "2020-12-04T09:18:58.407414", 
+"session": "bd5a156c-3611-11eb-8e63-19afe33e1253", 
+"type": "voip", 
+"protocol": "udp", 
+"dest_ip": "localhost", 
+"dest_port": "5060", 
+"src_ip": "127.0.0.1", 
+"src_port": 42859
+}{
+"eventid": "command_accept", 
+"command_input": "OPTIONS sip:100@localhost SIP/2.0\nVia: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK87asdks7\nFrom: socketHelper\nTo: 100@localhost\nCall-ID: 9996\nCSeq: 1 OPTIONS\nContact: socketHelper\n\n", 
+"command_output": "SIP/2.0 200 OK\nVia: SIP/2.0/UDP 10.10.15.125:5060\nTo:  socketHelper\nFrom: 100 <sip:100@10.10.15.125>\nCall-ID:  9996\nCSeq:  1 OPTIONS\nContact: 100 <sip:100@10.10.15.125>\nAllow: INVITE, ACK, CANCEL, OPTIONS, BYE, REGISTER\nAccept: application/sdp\nAccept-Language: en\n\n\n", 
+"command_input_codec": "bytes", 
+"command_output_codec": "bytes", 
+"timestamp": "2020-12-04T09:18:58.407438", 
+"session": "bd5a156c-3611-11eb-8e63-19afe33e1253", 
+"type": "voip", 
+"protocol": "udp", 
+"dest_ip": "localhost", 
+"dest_port": "5060", 
+"src_ip": "127.0.0.1", 
+"src_port": 42859
+}{
+"eventid": "command_accept", 
+"command_input": "INVITE sip:100@localhost SIP/2.0\nVia: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK87asdks7\nFrom: socketHelper\nTo: 100@localhost\nCall-ID: 9996\nCSeq: 2 INVITE\nContact: socketHelper\nAccept: application/sdp\nContent-Type: application/sdp\nContent-Length: 126\n\nv=0\no=socketHelper 5566 7788 IN IP4 127.0.0.1\ns=SDP Subject\ni=SDP information\nc=IN IP4 127.0.0.1\nt=0 0\nm=audio 30123 RTP/AVP 0\n\n", 
+"command_output": "SIP/2.0 401 Unauthorized\nVia: SIP/2.0/UDP 10.10.15.125:5060\nTo:  socketHelper\nFrom: 100 <sip:100@10.10.15.125>\nCall-ID:  9996\nCSeq:  2 INVITE\nContact: 100 <sip:100@10.10.15.125>\nWWW-Authenticate: Digest realm=\"100@10.10.15.125\",nonce=\"5c7692a91147defb67371286ac6ae18e\",opaque=\"1234567890\"", "command_input_codec": "bytes", 
+"command_output_codec": 
+"bytes", "timestamp": 
+"2020-12-04T09:18:58.407816", 
+"session": "bd5a156c-3611-11eb-8e63-19afe33e1253", 
+"type": "voip", 
+"protocol": "udp", 
+"dest_ip": "localhost", 
+"dest_port": "5060", 
+"src_ip": "127.0.0.1", 
+"src_port": 42859
+}{
+"eventid": "command_accept", 
+"command_input": "INVITE sip:100@localhost SIP/2.0\nVia: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK87asdks7\nFrom: socketHelper\nTo: 100@localhost\nCall-ID: 9996\nCSeq: 3 INVITE\nContact: socketHelper\nAccept: application/sdp\nContent-Type: application/sdp\nContent-Length: 126\nAuthorization: Digest username=\"100\", realm=\"100@localhost\", uri=\"sip:100@localhost\", nonce=\"5c7692a91147defb67371286ac6ae18e\",response=\"3300b5c2fdb63034fc3e43f224c82597\"\n\nv=0\no=socketHelper 5566 7788 IN IP4 127.0.0.1\ns=SDP Subject\ni=SDP information\nc=IN IP4 127.0.0.1\nt=0 0\nm=audio 30123 RTP/AVP 0\n\n", 
+"command_output": "SIP/2.0 401 Unauthorized\nVia: SIP/2.0/UDP 10.10.15.125:5060\nTo:  socketHelper\nFrom: 100 <sip:100@10.10.15.125>\nCall-ID:  9996\nCSeq:  3 INVITE\nContact: 100 <sip:100@10.10.15.125>\nWWW-Authenticate: Digest realm=\"100@10.10.15.125\",nonce=\"e4199ed30a65fe8ac05843f5e7f01955\",opaque=\"1234567890\"",
+"command_input_codec": "bytes", 
+"command_output_codec": "bytes", 
+"timestamp": "2020-12-04T09:18:58.408379", 
+"session": "bd5a156c-3611-11eb-8e63-19afe33e1253", 
+"type": "voip", 
+"protocol": "udp", 
+"dest_ip": "localhost", 
+"dest_port": "5060", 
+"src_ip": "127.0.0.1", 
+"src_port": 42859
+}{
+"eventid": "disconnection", 
+"timestamp": "2020-12-04T09:20:58.086353", 
+"session": "bd5a156c-3611-11eb-8e63-19afe33e1253", 
+"type": "voip", 
+"protocol": "udp", 
+"dest_ip": "localhost", 
+"dest_port": "5060", 
+"src_ip": "127.0.0.1", 
+"src_port": 42859
+}

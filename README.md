@@ -22,6 +22,11 @@
 ## Запуск
 - `docer-compose up`
 
+## Логирование
+Ведет логирование сразу в два файла `.json` для Kibana и `.log` для контроля работы программы
+- [Json log](example_log.json)
+- [LOG log](example_log.json)
+
 ## Планы:
 - [x] реализовать tcp протокол
 - [x] В случае неправильной авторизации, возвращать ответы `400 Bad Request` или `481: b"Call/Transaction Does Not Exist",`
@@ -169,3 +174,4 @@
     OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 47.04 seconds
 ```
+

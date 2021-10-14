@@ -20,6 +20,11 @@ Honeypot that imitates VoIP phone. It receives udp/tcp requests and send answer 
 ## Starting
 - `docer-compose up`
 
+## Logging
+This Honeypot writes logs to files `.json` for Kibana and `.log` for admin to control program wrking
+- [Json log](example_log.json)
+- [LOG log](example_log.json)
+
 ## ToDo:
 - [x] Tcp protocol
 - [x] In case incorrect authorization send `400 Bad Request` or `481: b"Call/Transaction Does Not Exist",`
