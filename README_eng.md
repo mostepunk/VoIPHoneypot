@@ -23,7 +23,7 @@ Honeypot that imitates VoIP phone. It receives udp/tcp requests and send answer 
 ## Logging
 This Honeypot writes logs to files `.json` for Kibana and `.log` for admin to control program wrking
 - [Json log](example_log.json)
-- [LOG log](example_log.json)
+- [LOG log](example_log.log)
 
 ## ToDo:
 - [x] Tcp protocol
@@ -104,7 +104,7 @@ This Honeypot writes logs to files `.json` for Kibana and `.log` for admin to co
 ```
 
 ## Result of Nmap scanning
-- `sudo nmap -sV -T4 -O -A -f --version-light 192.168.*.*` - Настоящий телефон
+- `sudo nmap -sV -T4 -O -A -f --version-light 192.168.*.*` - Real Phone
     ```
         Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-26 12:54 MSK
         Nmap scan report for 192.168.*.*
@@ -140,7 +140,7 @@ This Honeypot writes logs to files `.json` for Kibana and `.log` for admin to co
         OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
         Nmap done: 1 IP address (1 host up) scanned in 45.35 seconds
     ```
-- `sudo nmap -sV -T4 -O -A -f --version-light 172.28.3.2` - Ловушка
+- `sudo nmap -sV -T4 -O -A -f --version-light 172.28.3.2` - Honeypot
 ```
     Starting Nmap 7.80 ( https://nmap.org ) at 2021-10-13 23:27 MSK
     Stats: 0:00:04 elapsed; 0 hosts completed (0 up), 1 undergoing ARP Ping Scan

@@ -25,7 +25,7 @@
 ## Логирование
 Ведет логирование сразу в два файла `.json` для Kibana и `.log` для контроля работы программы
 - [Json log](example_log.json)
-- [LOG log](example_log.json)
+- [LOG log](example_log.log)
 
 ## Планы:
 - [x] реализовать tcp протокол
